@@ -9,7 +9,7 @@ pipeline {
 
     stage('Smoke Test') {
       when {
-        branch 'master'
+        branch 'devlopement'
       }
       steps {
         echo 'Print smoke test'
@@ -24,6 +24,5 @@ pipeline {
         input(message: 'Are you sure to certify', ok: 'yes')
       }
     }
-
   }
 }
